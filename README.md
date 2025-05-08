@@ -18,9 +18,7 @@
 
 ## ⚙️ Architecture
 
-
-![image.png](attachment:ecddbdeb-ce8c-43c0-a016-dbf634dc6490:image.png)
-
+![image](https://github.com/user-attachments/assets/0f39b823-2f31-492a-a5bd-79e207f110bc)
 - **Browser UI** (top-left) – The single-page app in your users’ browsers, built with vanilla JS, HTML, and CSS.
 - **FastAPI API server** (center) – Hosted on **Google Cloud Run**, this is the core service that orchestrates everything.
     - Receives text or audio uploads from the UI
