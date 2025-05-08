@@ -98,15 +98,15 @@ sophie-voice-bot/
 3. **Deploy to Cloud Run**
     
     ```powershell
-    powershell
-    CopyEdit
-    gcloud run deploy sophie-bot `
-      --image gcr.io/voice-ai-458213/sophie-bot:latest `
-      --platform=managed --region=europe-north1 `
-      --allow-unauthenticated `
-      --service-account=voice-ai-bot@voice-ai-458213.iam.gserviceaccount.com `
-      --update-secrets "OPENAI_API_KEY=openai-api-key:latest,..." `
-      --set-env-vars "GCP_PROJECT=voice-ai-458213,GCS_BUCKET=voice-ai-458213-sophie-bucket,REDIS_URL=redis://[HOST]:6379/0,PINECONE_ENV=us-east1-aws,PINECONE_INDEX=sophie-memory"
+CopyEdit
+gcloud run deploy sophie-bot `
+  --image <YOUR GCP PROJECT ID>:latest `
+  --platform=managed --region=<YOUR REGION> `
+  --allow-unauthenticated `
+  --service-account=<SA Account> `
+  --update-secrets "OPENAI_API_KEY=openai-api-key:latest,..." `
+  --set-env-vars "GCP_PROJECT=...,GCS_BUCKET=...,REDIS_URL=redis://[HOST]:xxx/x,PINECONE_ENV=xxx,PINECONE_INDEX=xxx-memory"
+
     
     ```
     
